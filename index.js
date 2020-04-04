@@ -7,7 +7,7 @@ server.listen(port, host, () => {
     console.log(`http://${host}:${port}`)
 })
 
-
+let sockets = []
 
 server.on('connection', function(sock) {
     console.log(`Connected @ ${sock.remoteAddress}:${sock.remotePort}`)
